@@ -8,3 +8,8 @@
 Используйте следующие шаги, чтобы выполнить тест на соответствие хи-квадрат в Python, чтобы определить, согласуются ли данные с мнением владельца ИТ компании.
 
 expected = [50,50,50,50,50]
+observed = [40, 50, 47, 53, 60]
+import scipy.stats as stats
+
+#perform Chi-Square Goodness of Fit Test
+stats.chisquare(f_obs=observed, f_exp=expected)
